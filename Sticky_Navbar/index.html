@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        #header {
+            text-align: center;
+        }
+        #logo {
+           width: 250px;
+           height: auto;
+        }
+        #menu-bar {
+            text-align: center;
+            background-color: darkslategray;
+        }
+        
+        #menu-bar li {
+            display: inline-block;
+            list-style: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            padding: 20px 20px;
+            cursor: pointer;
+        }
+        #container {
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #container img {
+            width: 100%;
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+       <!-- ================ LOGO ================== -->
+    <div id="header">
+        <img src="https://www.logodesign.net/logo/leaves-with-water-drops-2166ld.png?size=2&industry=nature" alt="" id="logo">
+    </div>
+
+    <!-- ================ NAVBAR ================== -->
+    <nav id="menu-bar">
+
+       <li>Home</li>
+       <li>About Us</li>
+       <li>Client</li>
+       <li>Our Team</li>
+       <li>Contact Us</li>
+ 
+    </nav>
+    
+    <!-- ================ MAIN-SECTION ================== -->
+    <div id="container">
+      <h1>About Us</h1>
+      <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?cs=srgb&dl=pexels-fauxels-3184357.jpg&fm=jpg" alt="">
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo voluptatem ea cupiditate soluta voluptate perferendis aut nesciunt porro voluptas fuga consectetur provident corrupti minima, harum maiores tenetur quam, quo quasi adipisci cumque. Et tempore temporibus, dignissimos error illo atque quae asperiores at fugiat totam quas est aliquid, recusandae quisquam numquam expedita, ipsam minus assumenda quis non? Ad sunt odio, ipsum ipsam maxime libero quia iste beatae aliquam consequatur inventore minus facilis aut. Nemo quisquam repellendus iste iure aliquid rerum ut sed modi numquam. Nam similique ratione non reiciendis porro tempore rem beatae, aperiam inventore ex eius minima harum distinctio amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ex, distinctio nobis obcaecati quos atque sint et soluta repudiandae sed laudantium enim fuga sequi cupiditate architecto, vitae aliquam eius suscipit. Quia, nisi tenetur suscipit iusto dolor saepe nulla, a quasi exercitationem soluta delectus. Pariatur necessitatibus voluptatibus repellendus vitae magnam eum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti vel neque rerum voluptatibus, numquam fuga tempore praesentium ducimus esse alias ex cupiditate dolorum. Iusto dolorum voluptatum quam id quos illo, amet delectus nulla, ea enim aliquid fugit. Fugiat harum earum nobis molestias recusandae molestiae! Non alias ipsa at consequuntur magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptas accusantium velit cum, adipisci cumque necessitatibus aspernatur atque nulla. Modi blanditiis nihil, obcaecati a est provident non quod dolores, veritatis distinctio mollitia ex eum accusantium laboriosam voluptate enim unde nisi porro consequuntur recusandae. Possimus dolorem, quidem sed repellat deserunt nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, libero quis officiis optio nulla reprehenderit ducimus illo officia placeat veniam? Harum illum, distinctio vel sequi explicabo voluptates debitis. Consequatur nihil, sunt ea numquam nobis illum maxime iusto ad hic accusantium! Voluptas consectetur consequuntur excepturi velit officiis laudantium fugit saepe eveniet?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nulla porro, nisi consequatur perspiciatis eligendi at totam voluptatum asperiores ullam cum, esse modi. Tenetur adipisci odio repellendus quidem voluptate quod dolore a qui itaque ut error nobis quaerat veritatis, ipsam pariatur, enim numquam. Quas, libero necessitatibus consequatur reiciendis assumenda beatae placeat eaque! Iusto architecto nam repellendus quod labore quo quasi blanditiis cupiditate temporibus saepe molestias natus, placeat eaque exercitationem possimus quae minus consequatur pariatur in amet alias cum fugit. Vel consequatur facere sapiente quia nostrum perferendis earum ut deleniti? Quae, reprehenderit necessitatibus! Reprehenderit tempora tenetur vitae tempore distinctio molestiae repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint mollitia nisi iusto consectetur alias, commodi ad provident recusandae iste aliquid soluta ipsam odio magni ratione non ab sequi saepe delectus vitae quo nostrum cum asperiores. Minus sequi fugit ullam dolorum officia. Culpa ullam commodi expedita maxime temporibus, minima id, obcaecati, quisquam magnam quam deserunt in similique itaque earum ad ex vero quasi dicta omnis non ipsum? Officia pariatur cumque natus commodi deleniti ut accusantium doloribus eveniet in eos, illo enim facilis aliquam numquam placeat. Provident reprehenderit consectetur quibusdam eos expedita dicta accusantium architecto illo suscipit aut adipisci, eum maiores sunt.
+      </p>
+    </div>
+
+  <script>
+      window.addEventListener("scroll", ()=>{
+
+        let nav = document.getElementById("menu-bar");
+
+         if(window.pageYOffset >= 190){
+              nav.classList.add("sticky");
+         }
+         else {
+              nav.classList.remove("sticky");
+         }
+      });
+  </script>
+</body>
+</html>

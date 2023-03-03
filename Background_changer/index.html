@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 2px solid grey;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #color-switcher {
+            text-align: right;
+        }
+        #white{
+            background-color: white;
+        }
+        #lightpink{
+            background-color: #FFB6C1;
+        }
+        #skyblue{
+            background-color: #87CEFA;
+        }
+        #black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+       <!-- =========== COLORS ============= -->
+    <div id="color-switcher">
+        <span class="btn" id="white"  onclick="changeBg('#fff')"></span>
+        <span class="btn" id="lightpink" onclick="changeBg('#FFB6C1')"></span>
+        <span class="btn" id="skyblue" onclick="changeBg('#87CEFA')"></span>
+        <span class="btn" id="black" onclick="changeBg('#000')"></span>
+    </div>
+
+    <!-- ============== HEADING ================= -->
+    <h1 class="text">About Us</h1>
+
+
+     <!-- ============== IMAGE ================= -->
+    <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?cs=srgb&dl=pexels-fauxels-3184357.jpg&fm=jpg" alt="">
+
+     <!-- ============== PARAGRAPH ================= -->
+    <p class="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat fuga illum id nesciunt, consequatur enim! Cumque laborum animi harum labore quo ipsum nihil, voluptatum provident voluptas eaque dolor nesciunt unde, tempore cupiditate, molestias recusandae itaque illo impedit reprehenderit voluptate aliquid officiis vero maxime. Hic pariatur harum repudiandae, quibusdam ipsum quas. Voluptas nemo, dolores unde perferendis doloremque nihil aperiam aliquam qui fuga exercitationem nobis reiciendis, quos soluta quas atque accusantium autem, distinctio dolorum sapiente iure velit illo iste illum vero? Enim sed culpa, ut sint iure dolore molestiae magnam fuga nihil illo quaerat ab molestias veniam nisi aspernatur recusandae a tempore possimus aliquid harum velit voluptatum dolores in! Soluta ipsam est esse dolores repudiandae obcaecati molestias magni? Molestiae deleniti facilis labore voluptates alias quos repellendus, libero saepe delectus accusamus quis at eius numquam obcaecati sunt autem illo. Aliquid et optio eveniet excepturi iure quia reiciendis suscipit obcaecati! Officia a repudiandae suscipit officiis dolores. Eveniet quo beatae voluptate natus! Sint, doloremque ullam. Accusantium ipsum, animi esse obcaecati labore ea ab, temporibus non minus sunt praesentium accusamus odio voluptatum blanditiis aut! Nihil odit corporis cupiditate at quo vel, esse sint, aut in aliquid quisquam repellat. Numquam velit molestiae error voluptatem ipsam expedita, ducimus magni deleniti possimus vero quidem illum nostrum fugiat ea at quibusdam! Commodi mollitia unde quisquam quam fuga rem animi sint, neque non doloribus tenetur quod impedit earum officiis saepe quos. Dolor quasi fugiat placeat sapiente provident, libero cum dignissimos perferendis in facilis amet quae veniam est? Voluptatem, ipsam. Asperiores nemo officiis mollitia quam natus, vitae illo nihil quidem, perspiciatis molestiae aut corporis fugiat numquam eius voluptate obcaecati labore reprehenderit exercitationem suscipit accusamus omnis saepe assumenda. Dolor eaque quam quidem eum deserunt fuga porro ex! Quod consequuntur voluptatibus reprehenderit. Soluta iste delectus a maiores culpa repellendus quod vel dolorum, optio est vitae eum cum explicabo sunt perspiciatis exercitationem animi, nulla esse quae earum at mollitia alias magnam reprehenderit! Provident cupiditate optio voluptatibus perspiciatis magni enim sunt hic veniam accusantium a debitis, modi ducimus dolore inventore impedit est, quibusdam nobis. Aut architecto corrupti tenetur facere veritatis, cum, corporis itaque doloribus aliquid obcaecati deleniti ipsam unde dignissimos, omnis illum provident. Totam labore, minus recusandae velit nisi veritatis dolores adipisci sint debitis impedit esse quia molestias reiciendis dolorem obcaecati fuga. Nam earum quod eligendi esse quisquam sapiente, adipisci molestiae officia dicta nesciunt cupiditate impedit autem, excepturi reprehenderit alias minus, dolorum sequi debitis odit expedita? Alias fugit eos consectetur porro debitis repudiandae! Exercitationem itaque officia earum pariatur voluptas reiciendis tempora maxime. Ad est rerum error quam nulla esse voluptatum ratione dolores tempore, animi tenetur deserunt quod saepe. Perspiciatis soluta quia odit neque quisquam tempora doloribus suscipit autem voluptate nulla vel ullam magni dolorem architecto vitae, est qui ea repellendus necessitatibus. Deleniti tenetur totam animi beatae quia. Quidem odio culpa alias laborum inventore nobis facilis cupiditate ipsum consectetur accusamus provident voluptate, itaque sequi odit molestiae eum animi ducimus enim deserunt, dolore fugit! Tempora odio distinctio sint cum non ipsam nostrum assumenda eligendi, corrupti laboriosam dicta dolor.
+    </p>
+
+    <script>
+        function changeBg(color){
+            document.body.style.backgroundColor = color;
+
+        let txt = document.getElementsByClassName("text");
+
+        if(color == "#000"){
+
+            for(let elm of txt){
+                    elm.style.color = "#fff";
+                }
+
+        }
+        else {
+
+            for(let elm of txt){
+                    elm.style.color = "#000";
+                }
+
+        }
+    } 
+    </script>
+</body>
+</html>

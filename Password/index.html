@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password (Easy Tutorial)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(23, 42, 42);
+        }
+        .input-box {
+            max-width: 500px;
+            width: 90%;
+            padding: 10px 20px;
+            margin: 320px auto;
+            background: #fff;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+        }
+        .input-box input {
+            padding: 10px 0;
+            border: 0;
+            outline: 0;
+            width: 100%;
+            font-size: 25px;
+            color: #555;
+        }
+        .input-box img {
+            width: 35px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-box">
+        <input type="password" placeholder="password" id="password">
+        <img src="eye-close.png" id="eyeicon">
+    </div>
+
+    <script>
+        const eyeicon = document.getElementById("eyeicon");
+        const password = document.getElementById("password");
+
+
+        eyeicon.onclick = function (){
+            if(password.type == "password"){
+                password.type = "text";
+                eyeicon.src = "eye-open.png"
+            }else {
+                password.type = "password";
+                eyeicon.src = "eye-close.png"
+            }
+        }
+    </script>
+</body>
+</html>
