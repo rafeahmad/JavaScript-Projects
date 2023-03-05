@@ -2,7 +2,7 @@
 
 # Temprature Converter
 
-I have created a temprature converter using JavaScript, With the help of this you can convert celcius value into farenhite.
+I have created a temprature converter using JavaScript, With the help of this you can convert celcius value into fahrenheit.
 
 **Output -**
 
