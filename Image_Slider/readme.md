@@ -6,3 +6,7 @@ I have created a JavaScript project image slider. In this project, When you clic
 
 **Output -**
 
+https://user-images.githubusercontent.com/119880897/224105525-5ac5cbe8-cd01-4387-9f80-41a8038a4377.mp4
+
+
+
