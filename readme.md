@@ -14,5 +14,7 @@ After completing HTML and CSS now moved into JavaScript. I have created some min
 
 [Stopwatch](https://rafeahmad-jsproject-stopwatch.netlify.app/)
 
+[Image Slider](https://rafeahmad-js-imageslider.netlify.app/)
+
 
 
