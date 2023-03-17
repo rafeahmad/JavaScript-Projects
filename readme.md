@@ -6,6 +6,8 @@ After completing HTML and CSS now moved into JavaScript. I have created some min
 
 [Background Changer](https://rafeahmad-bg-changer-js.netlify.app/)
 
+[Counter](https://rafeahmad-js-counterapp.netlify.app/)
+
 [Random Joke Generator](https://rafeahmad-js-random-joke-generator.netlify.app/)
 
 [Sticky Navbar](https://rafeahmad-js-stickynavbar.netlify.app/)
