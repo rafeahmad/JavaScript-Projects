@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <div id="container">
+
+        <!-- HEADING -->
+        <div id="title">
+            <h2>Digital Clock</h2>
+        </div>
+
+
+        <!-- TIME -->
+        <div class="box1">
+
+           <div>
+              <h1>Hour</h1>
+              <div id="hours" class="clock"></div>
+           </div>
+             <span>:</span>
+            
+           <div>
+             <h1>Minute</h1>
+             <div id="minutes" class="clock"></div>
+           </div> 
+             <span>:</span>
+
+           <div>
+             <h1>Second</h1>
+             <div id="seconds" class="clock"></div>
+           </div>
+
+        </div>
+
+
+          <!-- DATE -->
+        <div class="box2">
+
+           <div>
+             <h1>Date</h1>
+             <div id="date" class="clock cal"></div>
+           </div>
+
+           <span>-</span>
+
+           <div>
+            <h1>Month</h1>
+            <div id="month" class="clock cal"></div>
+          </div>
+
+           <span>-</span>
+
+          <div>
+            <h1>Year</h1>
+            <div id="year" class="clock cal"></div>
+          </div>
+
+        </div>
+
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
