@@ -20,5 +20,8 @@ After completing HTML and CSS now moved into JavaScript. I have created some min
 
 [Navbar Toggle Menu](https://rafeahmad-js-togglemenu.netlify.app/)
 
+[Digital Clock](https://rafeahmad-js-digitalclock.netlify.app/)
+
+
 
 
